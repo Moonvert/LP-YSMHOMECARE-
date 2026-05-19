@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   Shield,
   Users,
-  Heart,
   MapPin,
   Stethoscope,
   Activity,
