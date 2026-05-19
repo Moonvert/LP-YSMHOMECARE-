@@ -39,8 +39,10 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL =
-  "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20YSM%20Health%20Care.";
+const WHATSAPP_MESSAGE =
+  "Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20YSM%20Health%20Care.";
+const WHATSAPP_URL = `https://wa.me/5511963140103?text=${WHATSAPP_MESSAGE}`;
+const WHATSAPP_URL_RJ = `https://wa.me/5522998404838?text=${WHATSAPP_MESSAGE}`;
 
 function Header() {
   return (
@@ -581,17 +583,31 @@ function Footer() {
         </div>
         <div>
           <div className="text-white font-medium mb-3">Contato</div>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center gap-2 text-gold hover:text-gold-soft transition"
-          >
-            <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
-          </a>
-          <div className="mt-3 inline-flex items-center gap-2">
-            <Phone className="h-4 w-4 text-gold" /> Atendimento 24h
-          </div>
+          <ul className="space-y-2">
+            <li>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 text-gold hover:text-gold-soft transition"
+              >
+                <MessageCircle className="h-4 w-4" /> São Paulo: (11) 96314 0103
+              </a>
+            </li>
+            <li>
+              <a
+                href={WHATSAPP_URL_RJ}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 text-gold hover:text-gold-soft transition"
+              >
+                <MessageCircle className="h-4 w-4" /> Rio de Janeiro: (22) 99840 4838
+              </a>
+            </li>
+            <li className="inline-flex items-center gap-2 pt-1">
+              <Phone className="h-4 w-4 text-gold" /> Atendimento 24h
+            </li>
+          </ul>
         </div>
       </div>
       <div className="mx-auto max-w-6xl px-6 mt-10 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
