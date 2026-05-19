@@ -23,13 +23,13 @@ import aboutImg from "@/assets/about-family.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YSM Health Care — Cuidado humanizado e profissional no seu lar" },
+      { title: "YSM Health Care | Cuidado humanizado e profissional no seu lar" },
       {
         name: "description",
         content:
           "Home care premium em São Paulo, Rio de Janeiro e Santa Catarina. Equipe exclusiva por paciente, sem rotatividade. Há mais de 12 anos cuidando de quem você ama.",
       },
-      { property: "og:title", content: "YSM Health Care — Cuidado humanizado no seu lar" },
+      { property: "og:title", content: "YSM Health Care | Cuidado humanizado no seu lar" },
       {
         property: "og:description",
         content:
@@ -48,8 +48,8 @@ function Header() {
     <header className="absolute top-0 left-0 right-0 z-30">
       <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 text-white">
-          <div className="h-9 w-9 rounded-full bg-gold flex items-center justify-center">
-            <Heart className="h-4 w-4 text-navy" strokeWidth={2.5} />
+          <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center ring-1 ring-white/20">
+            <Stethoscope className="h-5 w-5 text-navy" strokeWidth={2.25} />
           </div>
           <div className="leading-tight">
             <div className="font-serif text-xl tracking-wide">YSM</div>
@@ -106,7 +106,7 @@ function Hero() {
           </h1>
           <p className="text-lg text-white/85 max-w-2xl mb-10 leading-relaxed">
             Há mais de 12 anos cuidando de quem você ama, com equipe contratada especialmente para
-            cada paciente — sem rotatividade, sem improvisos.
+            cada paciente, sem rotatividade e sem improvisos.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -192,7 +192,7 @@ function Empathy() {
 
         <p className="text-muted-foreground max-w-3xl text-lg leading-relaxed">
           A YSM foi criada para resolver exatamente isso. Cada paciente recebe uma equipe formada
-          especificamente para ele — <span className="text-navy font-medium">sem substituições constantes, sem cuidadores genéricos.</span>
+          especificamente para ele. <span className="text-navy font-medium">Sem substituições constantes, sem cuidadores genéricos.</span>
         </p>
       </div>
     </section>
@@ -365,7 +365,7 @@ function About() {
             </p>
             <p>
               Somos reconhecidos pelo cuidado humanizado, personalizado e pela continuidade do
-              profissional ao lado de cada paciente — porque vínculo é parte fundamental do
+              profissional ao lado de cada paciente, porque vínculo é parte fundamental do
               tratamento.
             </p>
           </div>
@@ -560,8 +560,8 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-sm">
         <div>
           <div className="flex items-center gap-2 text-white mb-4">
-            <div className="h-9 w-9 rounded-full bg-gold flex items-center justify-center">
-              <Heart className="h-4 w-4 text-navy" strokeWidth={2.5} />
+            <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
+              <Stethoscope className="h-5 w-5 text-navy" strokeWidth={2.25} />
             </div>
             <div className="leading-tight">
               <div className="font-serif text-xl">YSM</div>
@@ -575,9 +575,9 @@ function Footer() {
         <div>
           <div className="text-white font-medium mb-3">Atuação</div>
           <ul className="space-y-2">
-            <li>São Paulo — SP</li>
-            <li>Rio de Janeiro — RJ</li>
-            <li>Santa Catarina — SC</li>
+            <li>São Paulo, SP</li>
+            <li>Rio de Janeiro, RJ</li>
+            <li>Santa Catarina, SC</li>
           </ul>
         </div>
         <div>
