@@ -642,7 +642,7 @@ function WhatsAppFloat() {
 
 function Index() {
   return (
-    <main className="bg-background text-foreground">
+    <main className="bg-background text-foreground overflow-x-hidden">
       <Header />
       <Hero />
       <Empathy />
