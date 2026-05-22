@@ -47,14 +47,14 @@ const WHATSAPP_URL_RJ = `https://wa.me/5522998404838?text=${WHATSAPP_MESSAGE}`;
 function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30">
-      <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 text-white">
-          <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center ring-1 ring-white/20">
-            <Stethoscope className="h-5 w-5 text-navy" strokeWidth={2.25} />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between gap-3">
+        <a href="#top" className="flex items-center gap-2 text-white shrink-0">
+          <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-white flex items-center justify-center ring-1 ring-white/20">
+            <Stethoscope className="h-4 w-4 sm:h-5 sm:w-5 text-navy" strokeWidth={2.25} />
           </div>
           <div className="leading-tight">
-            <div className="font-serif text-xl tracking-wide">YSM</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-gold-soft">Health Care</div>
+            <div className="font-serif text-lg sm:text-xl tracking-wide">YSM</div>
+            <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-gold-soft">Health Care</div>
           </div>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/85">
@@ -71,6 +71,15 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-gold text-navy px-5 py-2.5 text-sm font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
         >
           <MessageCircle className="h-4 w-4" /> WhatsApp
+        </a>
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener"
+          aria-label="WhatsApp"
+          className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full bg-gold text-navy shadow-[var(--shadow-gold)] shrink-0"
+        >
+          <MessageCircle className="h-5 w-5" />
         </a>
       </div>
     </header>
