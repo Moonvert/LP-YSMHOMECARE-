@@ -108,7 +108,7 @@ function Hero() {
             Home Care Premium · Desde 2014
           </div>
           <h1 className="font-serif text-[2rem] sm:text-5xl lg:text-6xl leading-[1.1] mb-5 sm:mb-6">
-            <span className="text-gold">Cuidado humanizado.</span>
+            Cuidado humanizado.
             <br />
             <span className="text-gold">Profissionais exclusivos.</span>
             <br />
