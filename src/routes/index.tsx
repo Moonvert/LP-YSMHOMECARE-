@@ -175,8 +175,8 @@ function Empathy() {
     },
   ];
   return (
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">
             Sabemos como você se sente
@@ -233,8 +233,8 @@ function Differentials() {
     },
   ];
   return (
-    <section id="diferenciais" className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="diferenciais" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Diferenciais</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
@@ -273,8 +273,8 @@ function Services() {
     { icon: MessagesSquare, title: "Suporte à Família", desc: "Orientação humanizada para decisões e rotinas de cuidado." },
   ];
   return (
-    <section id="servicos" className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="servicos" className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Serviços</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Nossos Serviços</h2>
@@ -312,12 +312,12 @@ function HowItWorks() {
     { n: "04", title: "Início imediato", desc: "Sua equipe exclusiva começa o atendimento." },
   ];
   return (
-    <section id="como-funciona" className="bg-navy text-white py-24 relative overflow-hidden">
+    <section id="como-funciona" className="bg-navy text-white py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
         <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gold blur-3xl" />
         <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-gold blur-3xl" />
       </div>
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Processo</span>
           <h2 className="font-serif text-3xl sm:text-4xl mt-3">Como funciona?</h2>
@@ -359,8 +359,8 @@ function About() {
     { v: "1:1", l: "Equipe exclusiva" },
   ];
   return (
-    <section id="sobre" className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-2 gap-14 items-center">
+    <section id="sobre" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-2 gap-14 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Sobre a YSM</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
@@ -434,8 +434,8 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Depoimentos</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
@@ -514,8 +514,8 @@ function FAQ() {
     },
   ];
   return (
-    <section id="faq" className="bg-white py-24">
-      <div className="mx-auto max-w-3xl px-6">
+    <section id="faq" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Dúvidas frequentes</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Perguntas frequentes</h2>
@@ -532,11 +532,11 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section className="relative bg-navy text-white py-24 overflow-hidden">
+    <section className="relative bg-navy text-white py-16 sm:py-24 overflow-hidden">
       <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
         <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-gold blur-3xl" />
       </div>
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 text-center">
         <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Comece agora</span>
         <h2 className="font-serif text-3xl sm:text-5xl mt-4 mb-6 leading-tight">
           Seu familiar merece <span className="text-gold">o melhor cuidado.</span>
@@ -567,7 +567,7 @@ function FinalCTA() {
 function Footer() {
   return (
     <footer className="bg-navy-deep text-white/70 py-12 border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-sm">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid md:grid-cols-3 gap-8 text-sm">
         <div>
           <div className="flex items-center gap-2 text-white mb-4">
             <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
@@ -619,7 +619,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto max-w-6xl px-6 mt-10 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-10 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
         © {new Date().getFullYear()} YSM Health Care. Todos os direitos reservados.
       </div>
     </footer>
