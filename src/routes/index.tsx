@@ -101,37 +101,37 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/60" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 pb-20 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 sm:pt-32 pb-16 sm:pb-20 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold-soft mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-soft mb-6 sm:mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             Home Care Premium · Desde 2014
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">
-            Cuidado humanizado.
+          <h1 className="font-serif text-[2rem] sm:text-5xl lg:text-6xl leading-[1.1] mb-5 sm:mb-6">
+            <span className="text-gold">Cuidado humanizado.</span>
             <br />
             <span className="text-gold">Profissionais exclusivos.</span>
             <br />
             Conforto no seu lar.
           </h1>
-          <p className="text-lg text-white/85 max-w-2xl mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/85 max-w-2xl mb-8 sm:mb-10 leading-relaxed">
             Há mais de 12 anos cuidando de quem você ama, com equipe contratada especialmente para
             cada paciente, sem rotatividade e sem improvisos.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
-              className="group inline-flex items-center gap-3 rounded-full bg-gold text-navy px-7 py-4 text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gold text-navy px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
             >
               <MessageCircle className="h-5 w-5" />
-              Falar com um especialista agora
+              Falar com um especialista
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-4 text-base text-white hover:bg-white/10 transition"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
             >
               Conhecer serviços
             </a>
