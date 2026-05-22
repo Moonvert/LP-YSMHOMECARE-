@@ -47,14 +47,14 @@ const WHATSAPP_URL_RJ = `https://wa.me/5522998404838?text=${WHATSAPP_MESSAGE}`;
 function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30">
-      <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 text-white">
-          <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center ring-1 ring-white/20">
-            <Stethoscope className="h-5 w-5 text-navy" strokeWidth={2.25} />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between gap-3">
+        <a href="#top" className="flex items-center gap-2 text-white shrink-0">
+          <div className="h-9 w-9 sm:h-10 sm:w-10 rounded-full bg-white flex items-center justify-center ring-1 ring-white/20">
+            <Stethoscope className="h-4 w-4 sm:h-5 sm:w-5 text-navy" strokeWidth={2.25} />
           </div>
           <div className="leading-tight">
-            <div className="font-serif text-xl tracking-wide">YSM</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-gold-soft">Health Care</div>
+            <div className="font-serif text-lg sm:text-xl tracking-wide">YSM</div>
+            <div className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-gold-soft">Health Care</div>
           </div>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/85">
@@ -71,6 +71,15 @@ function Header() {
           className="hidden md:inline-flex items-center gap-2 rounded-full bg-gold text-navy px-5 py-2.5 text-sm font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
         >
           <MessageCircle className="h-4 w-4" /> WhatsApp
+        </a>
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener"
+          aria-label="WhatsApp"
+          className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-full bg-gold text-navy shadow-[var(--shadow-gold)] shrink-0"
+        >
+          <MessageCircle className="h-5 w-5" />
         </a>
       </div>
     </header>
@@ -92,37 +101,37 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/60" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 pb-20 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 sm:pt-32 pb-16 sm:pb-20 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold-soft mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-soft mb-6 sm:mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             Home Care Premium · Desde 2014
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] mb-6">
+          <h1 className="font-serif text-[2rem] sm:text-5xl lg:text-6xl leading-[1.1] mb-5 sm:mb-6">
             Cuidado humanizado.
             <br />
             <span className="text-gold">Profissionais exclusivos.</span>
             <br />
             Conforto no seu lar.
           </h1>
-          <p className="text-lg text-white/85 max-w-2xl mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/85 max-w-2xl mb-8 sm:mb-10 leading-relaxed">
             Há mais de 12 anos cuidando de quem você ama, com equipe contratada especialmente para
             cada paciente, sem rotatividade e sem improvisos.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
-              className="group inline-flex items-center gap-3 rounded-full bg-gold text-navy px-7 py-4 text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gold text-navy px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
             >
               <MessageCircle className="h-5 w-5" />
-              Falar com um especialista agora
+              Falar com um especialista
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 px-7 py-4 text-base text-white hover:bg-white/10 transition"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
             >
               Conhecer serviços
             </a>
@@ -166,8 +175,8 @@ function Empathy() {
     },
   ];
   return (
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-3xl mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">
             Sabemos como você se sente
@@ -224,8 +233,8 @@ function Differentials() {
     },
   ];
   return (
-    <section id="diferenciais" className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="diferenciais" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Diferenciais</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
@@ -264,8 +273,8 @@ function Services() {
     { icon: MessagesSquare, title: "Suporte à Família", desc: "Orientação humanizada para decisões e rotinas de cuidado." },
   ];
   return (
-    <section id="servicos" className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="servicos" className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Serviços</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Nossos Serviços</h2>
@@ -303,12 +312,12 @@ function HowItWorks() {
     { n: "04", title: "Início imediato", desc: "Sua equipe exclusiva começa o atendimento." },
   ];
   return (
-    <section id="como-funciona" className="bg-navy text-white py-24 relative overflow-hidden">
+    <section id="como-funciona" className="bg-navy text-white py-16 sm:py-24 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
         <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gold blur-3xl" />
         <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-gold blur-3xl" />
       </div>
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Processo</span>
           <h2 className="font-serif text-3xl sm:text-4xl mt-3">Como funciona?</h2>
@@ -350,8 +359,8 @@ function About() {
     { v: "1:1", l: "Equipe exclusiva" },
   ];
   return (
-    <section id="sobre" className="bg-white py-24">
-      <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-2 gap-14 items-center">
+    <section id="sobre" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Sobre a YSM</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
@@ -381,19 +390,19 @@ function About() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute -inset-4 bg-gold/10 rounded-3xl -z-10" />
+        <div className="relative mt-2 lg:mt-0">
+          <div className="absolute -inset-2 sm:-inset-4 bg-gold/10 rounded-3xl -z-10" />
           <img
             src={aboutImg}
             alt="Família ao lado de paciente idoso e enfermeira da YSM"
             loading="lazy"
             width={1024}
             height={1024}
-            className="rounded-2xl shadow-[var(--shadow-soft)] w-full h-full object-cover aspect-[4/5]"
+            className="rounded-2xl shadow-[var(--shadow-soft)] w-full object-cover aspect-[4/5]"
           />
-          <div className="absolute -bottom-6 -left-6 bg-navy text-white p-5 rounded-2xl max-w-[220px] shadow-[var(--shadow-soft)] hidden sm:block">
+          <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-navy text-white p-4 sm:p-5 rounded-2xl max-w-[200px] sm:max-w-[220px] shadow-[var(--shadow-soft)]">
             <Check className="h-5 w-5 text-gold mb-2" />
-            <p className="text-sm leading-snug">
+            <p className="text-xs sm:text-sm leading-snug">
               Atendimento desde o Hospital Sírio-Libanês.
             </p>
           </div>
@@ -425,8 +434,8 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-cream py-16 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Depoimentos</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
@@ -473,7 +482,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         />
       </button>
       <div
-        className={`overflow-hidden transition-all duration-300 ${open ? "max-h-40 pb-6" : "max-h-0"}`}
+        className={`overflow-hidden transition-all duration-300 ${open ? "max-h-96 pb-6" : "max-h-0"}`}
       >
         <p className="text-muted-foreground leading-relaxed">{a}</p>
       </div>
@@ -505,8 +514,8 @@ function FAQ() {
     },
   ];
   return (
-    <section id="faq" className="bg-white py-24">
-      <div className="mx-auto max-w-3xl px-6">
+    <section id="faq" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Dúvidas frequentes</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Perguntas frequentes</h2>
@@ -523,11 +532,11 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <section className="relative bg-navy text-white py-24 overflow-hidden">
+    <section className="relative bg-navy text-white py-16 sm:py-24 overflow-hidden">
       <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
         <div className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-gold blur-3xl" />
       </div>
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 text-center">
         <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Comece agora</span>
         <h2 className="font-serif text-3xl sm:text-5xl mt-4 mb-6 leading-tight">
           Seu familiar merece <span className="text-gold">o melhor cuidado.</span>
@@ -558,7 +567,7 @@ function FinalCTA() {
 function Footer() {
   return (
     <footer className="bg-navy-deep text-white/70 py-12 border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-3 gap-8 text-sm">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid md:grid-cols-3 gap-8 text-sm">
         <div>
           <div className="flex items-center gap-2 text-white mb-4">
             <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center">
@@ -610,7 +619,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto max-w-6xl px-6 mt-10 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-10 pt-6 border-t border-white/10 text-xs text-white/40 text-center">
         © {new Date().getFullYear()} YSM Health Care. Todos os direitos reservados.
       </div>
     </footer>
@@ -633,7 +642,7 @@ function WhatsAppFloat() {
 
 function Index() {
   return (
-    <main className="bg-background text-foreground">
+    <main className="bg-background text-foreground overflow-x-hidden">
       <Header />
       <Hero />
       <Empathy />
