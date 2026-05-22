@@ -360,7 +360,7 @@ function About() {
   ];
   return (
     <section id="sobre" className="bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Sobre a YSM</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
