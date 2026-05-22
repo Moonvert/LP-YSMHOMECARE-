@@ -390,19 +390,19 @@ function About() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute -inset-4 bg-gold/10 rounded-3xl -z-10" />
+        <div className="relative mt-2 lg:mt-0">
+          <div className="absolute -inset-2 sm:-inset-4 bg-gold/10 rounded-3xl -z-10" />
           <img
             src={aboutImg}
             alt="Família ao lado de paciente idoso e enfermeira da YSM"
             loading="lazy"
             width={1024}
             height={1024}
-            className="rounded-2xl shadow-[var(--shadow-soft)] w-full h-full object-cover aspect-[4/5]"
+            className="rounded-2xl shadow-[var(--shadow-soft)] w-full object-cover aspect-[4/5]"
           />
-          <div className="absolute -bottom-6 -left-6 bg-navy text-white p-5 rounded-2xl max-w-[220px] shadow-[var(--shadow-soft)] hidden sm:block">
+          <div className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-navy text-white p-4 sm:p-5 rounded-2xl max-w-[200px] sm:max-w-[220px] shadow-[var(--shadow-soft)]">
             <Check className="h-5 w-5 text-gold mb-2" />
-            <p className="text-sm leading-snug">
+            <p className="text-xs sm:text-sm leading-snug">
               Atendimento desde o Hospital Sírio-Libanês.
             </p>
           </div>
