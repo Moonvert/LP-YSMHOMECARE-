@@ -101,20 +101,20 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/60" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 sm:pt-32 pb-16 sm:pb-20 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-24 sm:pt-32 pb-12 sm:pb-20 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-soft mb-6 sm:mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-soft mb-5 sm:mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             Home Care Premium · Desde 2014
           </div>
-          <h1 className="font-serif text-[2rem] sm:text-5xl lg:text-6xl leading-[1.1] mb-5 sm:mb-6">
+          <h1 className="font-serif text-[1.35rem] sm:text-5xl lg:text-6xl leading-[1.1] sm:leading-[1.1] mb-4 sm:mb-6">
             Cuidado humanizado.
             <br />
             <span className="text-gold">Profissionais exclusivos.</span>
             <br />
             Conforto no seu lar.
           </h1>
-          <p className="text-base sm:text-lg text-white/85 max-w-2xl mb-8 sm:mb-10 leading-relaxed">
+          <p className="text-[15px] sm:text-lg text-white/85 max-w-2xl mb-6 sm:mb-10 leading-relaxed">
             Há mais de 12 anos cuidando de quem você ama, com equipe contratada especialmente para
             cada paciente, sem rotatividade e sem improvisos.
           </p>
@@ -124,20 +124,20 @@ function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gold text-navy px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gold text-navy px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
             >
               <MessageCircle className="h-5 w-5" />
               Falar com um especialista
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 sm:px-7 py-3.5 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
             >
               Conhecer serviços
             </a>
           </div>
 
-          <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
+          <div className="mt-8 sm:mt-14 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl">
             {[
               { icon: Clock, label: "12 anos de mercado" },
               { icon: MapPin, label: "SP, RJ e SC" },
@@ -146,10 +146,10 @@ function Hero() {
             ].map((t) => (
               <div
                 key={t.label}
-                className="flex items-center gap-3 border-t border-white/15 pt-4"
+                className="flex items-center gap-2 sm:gap-3 border-t border-white/15 pt-3 sm:pt-4"
               >
-                <t.icon className="h-5 w-5 text-gold" />
-                <span className="text-sm text-white/90">{t.label}</span>
+                <t.icon className="h-5 w-5 text-gold shrink-0" />
+                <span className="text-xs sm:text-sm text-white/90">{t.label}</span>
               </div>
             ))}
           </div>
@@ -181,7 +181,7 @@ function Empathy() {
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">
             Sabemos como você se sente
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3 leading-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3 leading-tight">
             Entendemos o que sua família está vivendo
           </h2>
         </div>
@@ -237,7 +237,7 @@ function Differentials() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Diferenciais</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3">
             Por que famílias escolhem a YSM?
           </h2>
         </div>
@@ -277,7 +277,7 @@ function Services() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Serviços</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Nossos Serviços</h2>
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3">Nossos Serviços</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -320,7 +320,7 @@ function HowItWorks() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Processo</span>
-          <h2 className="font-serif text-3xl sm:text-4xl mt-3">Como funciona?</h2>
+          <h2 className="font-serif text-2xl sm:text-4xl mt-3">Como funciona?</h2>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 relative">
@@ -363,7 +363,7 @@ function About() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Sobre a YSM</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
             12 anos cuidando de quem mais importa
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed text-[15px]">
@@ -383,7 +383,7 @@ function About() {
           <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
             {stats.map((s) => (
               <div key={s.l}>
-                <div className="font-serif text-3xl text-navy mb-1">{s.v}</div>
+                <div className="font-serif text-2xl sm:text-3xl text-navy mb-1">{s.v}</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground">{s.l}</div>
               </div>
             ))}
@@ -438,7 +438,7 @@ function Testimonials() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Depoimentos</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3">
             O que dizem as famílias que atendemos
           </h2>
         </div>
@@ -518,7 +518,7 @@ function FAQ() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Dúvidas frequentes</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-navy mt-3">Perguntas frequentes</h2>
+          <h2 className="font-serif text-2xl sm:text-4xl text-navy mt-3">Perguntas frequentes</h2>
         </div>
         <div>
           {items.map((it) => (
@@ -538,10 +538,10 @@ function FinalCTA() {
       </div>
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 text-center">
         <span className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Comece agora</span>
-        <h2 className="font-serif text-3xl sm:text-5xl mt-4 mb-6 leading-tight">
+        <h2 className="font-serif text-2xl sm:text-5xl mt-4 mb-6 leading-tight">
           Seu familiar merece <span className="text-gold">o melhor cuidado.</span>
         </h2>
-        <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
           Fale agora com um especialista YSM e receba um plano de cuidado personalizado, sem
           compromisso.
         </p>
@@ -549,7 +549,7 @@ function FinalCTA() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener"
-          className="inline-flex items-center gap-3 rounded-full bg-gold text-navy px-8 py-4 text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+          className="inline-flex items-center gap-3 rounded-full bg-gold text-navy px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
         >
           <MessageCircle className="h-5 w-5" />
           Falar no WhatsApp agora
