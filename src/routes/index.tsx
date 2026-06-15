@@ -88,22 +88,22 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[100vh] flex items-center text-white overflow-hidden">
+    <section id="top" className="relative min-h-[100svh] sm:min-h-[100vh] flex items-start sm:items-center text-white overflow-hidden bg-navy">
       <div className="absolute inset-0">
         <img
           src={heroImg}
           alt="Cuidadora segurando carinhosamente a mão de uma paciente idosa em casa"
           width={1920}
           height={1080}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-[36%_center] sm:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/75 to-navy/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/45 sm:from-navy/95 sm:via-navy/75 sm:to-navy/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-transparent to-navy/75 sm:from-navy/40 sm:to-navy/60" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-24 sm:pt-32 pb-12 sm:pb-20 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 sm:pt-32 pb-10 sm:pb-20 w-full">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs uppercase tracking-[0.2em] text-gold-soft mb-5 sm:mb-8">
+          <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-gold/40 bg-white/5 backdrop-blur px-3 sm:px-4 py-1.5 text-[9px] sm:text-xs uppercase tracking-[0.14em] sm:tracking-[0.2em] text-gold-soft mb-5 sm:mb-8">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             Home Care Premium · Desde 2014
           </div>
@@ -124,14 +124,14 @@ function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-gold text-navy px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
+              className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-gold text-navy px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base font-medium hover:bg-gold-soft transition shadow-[var(--shadow-gold)]"
             >
               <MessageCircle className="h-5 w-5" />
               Falar com um especialista
             </a>
             <a
               href="#servicos"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
+              className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-white/30 px-5 sm:px-7 py-3 sm:py-4 text-sm sm:text-base text-white hover:bg-white/10 transition"
             >
               Conhecer serviços
             </a>
