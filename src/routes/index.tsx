@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
 
 const WHATSAPP_MESSAGE =
   "Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20YSM%20Health%20Care.";
-const WHATSAPP_URL = `https://wa.me/5511963140103?text=${WHATSAPP_MESSAGE}`;
+const WHATSAPP_URL = `https://wa.me/5511952132386?text=${WHATSAPP_MESSAGE}`;
 const WHATSAPP_URL_RJ = `https://wa.me/5522998404838?text=${WHATSAPP_MESSAGE}`;
 
 function Header() {
