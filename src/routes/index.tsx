@@ -88,17 +88,17 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="relative min-h-[100svh] sm:min-h-[100vh] flex items-start sm:items-center text-white overflow-hidden bg-navy">
+    <section id="top" className="relative sm:min-h-[100vh] flex items-start sm:items-center text-white overflow-hidden bg-navy">
       <div className="absolute inset-0">
         <img
           src={heroImg}
           alt="Cuidadora segurando carinhosamente a mão de uma paciente idosa em casa"
           width={1920}
           height={1080}
-          className="h-full w-full object-cover object-[36%_center] sm:object-center"
+          className="h-full w-full object-cover object-[60%_30%] sm:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/45 sm:from-navy/95 sm:via-navy/75 sm:to-navy/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/55 via-transparent to-navy/75 sm:from-navy/40 sm:to-navy/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/70 to-navy/85 sm:bg-gradient-to-r sm:from-navy/95 sm:via-navy/75 sm:to-navy/30" />
+        <div className="hidden sm:block absolute inset-0 bg-gradient-to-b from-navy/40 to-navy/60" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 sm:pt-32 pb-10 sm:pb-20 w-full">
