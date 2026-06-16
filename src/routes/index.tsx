@@ -600,7 +600,7 @@ function Footer() {
                 rel="noopener"
                 className="inline-flex items-center gap-2 text-gold hover:text-gold-soft transition"
               >
-                <MessageCircle className="h-4 w-4" /> São Paulo: (11) 96314 0103
+                <MessageCircle className="h-4 w-4" /> São Paulo: (11) 95213 2386
               </a>
             </li>
             <li>
